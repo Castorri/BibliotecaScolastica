@@ -18,6 +18,7 @@ namespace BibliotecaScolastica
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    //aggiunta commento da github
     public partial class MainWindow : Window
     {
         public MainWindow()
