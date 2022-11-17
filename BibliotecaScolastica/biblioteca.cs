@@ -8,18 +8,19 @@ namespace BibliotecaScolastica
 {
     internal class biblioteca
     {
+        //proprietà
         internal string Nome { get; set; }
         internal string Indirizzo { get; set; }
         internal string OrarioApertura { get; set; }
         internal string OrarioChiusura { get; set; }
         List<Libro> Libri = new List<Libro>();
-        internal biblioteca(string nome, string indirizzo, string orarioApertura, string orarioChiusura, List<Libro> libri)
+        //costruttore
+        internal biblioteca(string nome, string indirizzo, string orarioApertura, string orarioChiusura)
         {
             this.Nome = nome;
             this.Indirizzo = indirizzo;
             this.OrarioApertura = orarioApertura;
             this.OrarioChiusura = orarioChiusura;
-            this.Libri = libri;
         }
         
     }

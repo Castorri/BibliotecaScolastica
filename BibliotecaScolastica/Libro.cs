@@ -23,7 +23,7 @@ namespace BibliotecaScolastica
             this.NPagine = nPagine;
         }
 
-        internal Libro aggiuntaLibro(string autore, string titolo, int annoPubblicazione, string editore, int nPagine)
+        public Libro aggiuntaLibro(string autore, string titolo, int annoPubblicazione, string editore, int nPagine)
         {
             return new Libro(autore, titolo, annoPubblicazione, editore, nPagine);
         }
