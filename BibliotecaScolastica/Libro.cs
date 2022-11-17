@@ -22,5 +22,49 @@ namespace BibliotecaScolastica
             this.Editore = editore;
             this.NPagine = nPagine;
         }
+
+        internal Libro aggiuntaLibro(string autore, string titolo, int annoPubblicazione, string editore, int nPagine)
+        {
+            return new Libro(autore, titolo, annoPubblicazione, editore, nPagine);
+        }
+        internal string ricercaLibroTitolo(List<Libro> libri, string titolo)
+        {
+            for (int i = 0; i < libri.Count; i++)
+            {
+                if (libri[i].Titolo == titolo)
+                {
+                    return libri[i].ToString();
+                }
+            }
+            return titolo + " non trovato";
+        }
+        internal string ricercaLibroAutore(List<Libro> libri, string autore)
+        {
+            List<Libro> libriTrovati = new List<Libro>();
+            for (int i = 0; i < libri.Count; i++)
+            {
+                if (libri[i].Autore == autore)
+                {
+                    libriTrovati.Add(libri[i]);
+                }
+            }
+            if (libriTrovati.Count > 0)
+            {
+                return libriTrovati.ToString();
+            }
+            else
+            {
+                return "non esistono libri scritti da " + autore;
+            }
+        }
+        internal string determinazioneLibriPresenti(List<Libro> libri)
+        {
+            return "ci sono " + libri.Count + " libri";
+        }
+        public override string ToString()
+        {
+            return "titolo: " + Titolo + "\nautore: " + Autore + "\neditore: " + Editore + "\nanno di pubblicazione: " + AnnoPubblicazione + "\nnumero di pagine: " + NPagine + '\n';
+        }
+
     }
 }
