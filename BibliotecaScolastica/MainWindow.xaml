@@ -7,6 +7,39 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="creaLibri" Content="aggiungi un libro" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top" Height="42" Width="130" Click="Button_Click"/>
+        <Label Grid.Column="1" Content="titolo:" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top" Width="100" HorizontalContentAlignment="Center"/>
+        <Label Grid.Column="2" Content="autore:" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top" Width="100" HorizontalContentAlignment="Center"/>
+        <Label Grid.Column="3" Content="editore:" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top" Width="100" HorizontalContentAlignment="Center"/>
+        <Label Grid.Column="4" Content="anno uscita:" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top" Width="100" HorizontalContentAlignment="Center"/>
+        <Label Grid.Column="5" Content="numero pagine:" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top" Width="100" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="txtTitolo" Grid.Column="1" HorizontalAlignment="Center" Margin="0,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="txtAutore" Grid.Column="2" HorizontalAlignment="Center" Margin="0,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="txtEditore" Grid.Column="3" HorizontalAlignment="Center" Margin="0,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="txtAnnoPubblicazione" Grid.Column="4" HorizontalAlignment="Center" Margin="0,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="txtNPagine" Grid.Column="5" HorizontalAlignment="Center" Margin="0,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="creaBiblioteca" Content="crea una biblioteca" HorizontalAlignment="Center" Margin="0,49,0,0" VerticalAlignment="Top" Height="40" Width="130" Click="Button_Click" Grid.Row="1"/>
+        <Label Grid.Column="1" Content="nome:" HorizontalAlignment="Center" Margin="0,49,0,0" VerticalAlignment="Top" Width="100" HorizontalContentAlignment="Center" Grid.Row="1"/>
+        <Label Grid.Column="2" Content="indirizzo:" HorizontalAlignment="Center" Margin="0,49,0,0" VerticalAlignment="Top" Width="100" HorizontalContentAlignment="Center" Grid.Row="1"/>
+        <Label Grid.Column="3" Content="orario apertura:" HorizontalAlignment="Center" Margin="0,49,0,0" VerticalAlignment="Top" Width="100" HorizontalContentAlignment="Center" Grid.Row="1"/>
+        <Label Grid.Column="4" Content="orario chiusura:" HorizontalAlignment="Center" Margin="0,49,0,0" VerticalAlignment="Top" Width="100" HorizontalContentAlignment="Center" Grid.Row="1"/>
+        <TextBox x:Name="txtTitolo_Copy" Grid.Column="1" HorizontalAlignment="Center" Margin="0,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Grid.Row="1"/>
+        <TextBox x:Name="txtAutore_Copy" Grid.Column="2" HorizontalAlignment="Center" Margin="0,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Grid.Row="1"/>
+        <TextBox x:Name="txtEditore_Copy" Grid.Column="3" HorizontalAlignment="Center" Margin="0,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Grid.Row="1"/>
+        <TextBox x:Name="txtAnnoPubblicazione_Copy" Grid.Column="4" HorizontalAlignment="Center" Margin="0,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Grid.Row="1"/>
     </Grid>
 </Window>
