@@ -65,6 +65,20 @@ namespace BibliotecaScolastica
         {
             return "titolo: " + Titolo + "\nautore: " + Autore + "\neditore: " + Editore + "\nanno di pubblicazione: " + AnnoPubblicazione + "\nnumero di pagine: " + NPagine + '\n';
         }
-
+        internal string readingTime(Libro libro)
+        {
+            if (libro.NPagine <= 100)
+            {
+                return "tempo di lettura: 1h";
+            }
+            else if (libro.NPagine <= 200)
+            {
+                return "tempo di lettura: 2h";
+            }
+            else
+            {
+                return "tempo di lettura: superiore a 2h";
+            }
+        }
     }
 }
