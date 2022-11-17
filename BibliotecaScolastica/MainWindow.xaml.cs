@@ -25,5 +25,16 @@ namespace BibliotecaScolastica
         {
             InitializeComponent();
         }
+
+        private void creaBiblioteca_Click(object sender, RoutedEventArgs e)
+        {
+            biblioteca biblioteca = new biblioteca(txtNomeBib.ToString(), txtIndirizzoBib.ToString(), txtAperturaBib.ToString(), txtChiusuraBib.ToString());
+        }
+
+        private void creaLibri_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
     }
 }
