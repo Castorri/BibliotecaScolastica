@@ -21,6 +21,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+            //aggiunta commento da github
         <Button x:Name="creaLibri" Content="aggiungi un libro" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top" Height="42" Width="130" Click="Button_Click"/>
         <Label Grid.Column="1" Content="titolo:" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top" Width="100" HorizontalContentAlignment="Center"/>
         <Label Grid.Column="2" Content="autore:" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top" Width="100" HorizontalContentAlignment="Center"/>
